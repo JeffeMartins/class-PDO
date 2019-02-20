@@ -25,41 +25,41 @@ class Conexao extends PDO {
                                 
                 break; */
 
-            case 'bdesocial':
+            case 'bd1':
                 
                 $this->_host = "127.0.0.1";
                 $this->_banco = "";
                 $this->_usuario ="root";
-                $this->_senha = "sigma@2017";
+                $this->_senha = "senha-banco";
                 $this->_bd = new PDO("mysql:dbname={$this->getBanco()};host={$this->getHost()}", "{$this->getUsuario()}", "{$this->getSenha()}");
                                 
                 break;
             
-            case 'bdimageview':
+            case 'bd2':
 
                 $this->_host = "127.0.0.1";
-                $this->_banco = "imageview";
-                $this->_usuario ="postgres";
+                $this->_banco = "exemplo";
+                $this->_usuario ="usuario-banco";
                 $this->_senha = "";
                 $this->_bd = new PDO("pgsql:dbname={$this->getBanco()};host={$this->getHost()}", "{$this->getUsuario()}", "{$this->getSenha()}");
 
                 break;
 
-            case 'bdavisos':
+            case 'bd3':
 
                 $this->_host = "127.0.0.1";
-                $this->_banco = "bdavisos";
-                $this->_usuario ="postgres";
+                $this->_banco = "exemplo-banco";
+                $this->_usuario ="seu-usuario";
                 $this->_senha = "";
                 $this->_bd = new PDO("pgsql:dbname={$this->getBanco()};host={$this->getHost()}", "{$this->getUsuario()}", "{$this->getSenha()}");
                 
                 break;
 
-            case 'bdintranet':
+            case 'bd4':
 
                 $this->_host = "127.0.0.1";
-                $this->_banco = "crase";
-                $this->_usuario ="postgres";
+                $this->_banco = "db_exemplo";
+                $this->_usuario ="usuario-banco";
                 $this->_senha = "";
                 $this->_bd = new PDO("pgsql:dbname={$this->getBanco()};host={$this->getHost()}", "{$this->getUsuario()}", "{$this->getSenha()}");
                 
