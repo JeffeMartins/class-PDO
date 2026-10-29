@@ -1,0 +1,11 @@
+{
+  "name": "jeffemartins/pdo-connections",
+  "description": "Small, tested PHP utility with explicit configuration",
+  "type": "library",
+  "require": {
+    "php": ">=8.2"
+  },
+  "scripts": {
+    "test": "php tests/run.php"
+  }
+}
